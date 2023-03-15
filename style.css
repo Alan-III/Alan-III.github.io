@@ -270,7 +270,7 @@ body {
   /* Set the background color */
   background-color: #1d1d1d;
   /* Set the background image */
-  background-image: url('https://cdn.pixabay.com/photo/2014/09/13/11/11/ball-443853_960_720.jpg');
+  background-image: url('ball-background.jpg');
   /* Set the background size and position */
   background-size: cover;
   background-position: center;
@@ -305,7 +305,7 @@ body::after {
   width: 50%;
   height: 100%;
   /* Set the background image */
-        background-image: url('https://cdn.pixabay.com/photo/2022/04/29/13/50/gear-wheel-7163770_960_720.png');
+        background-image: url('gear-wheel.png');
   /* Set the background size and position */
   background-size:cover;
   background-position: center;
