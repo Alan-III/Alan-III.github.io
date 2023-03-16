@@ -126,7 +126,7 @@
       <h2 class="section-title">Contact</h2>
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
-          <form method="post" class="contact-form">
+          <form class="contact-form">
             <div class="form-group">
               <label for="name">Name:</label>
               <input type="text" class="form-control" id="name" name="name" required>
@@ -147,25 +147,6 @@
   </section>
   
   <script src="main.js"></script>
-  <?php
-  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Get the form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-
-    // Create the email message
-    $to = 'karagiannis.alex.grt+github@gmail.com';
-    $subject = 'New message from your website';
-    $body = "Name: $name\n\nEmail: $email\n\nMessage:\n$message";
-    $headers = "From: $email";
-
-    // Send the email
-    mail($to, $subject, $body, $headers);
-    echo "Message sent!";
-    exit();
-  }
-  ?>
 
 </body>
 </html>
