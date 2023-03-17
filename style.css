@@ -270,7 +270,7 @@ body {
   /* Set the background color */
   background-color: #1d1d1d;
   /* Set the background image */
-  background-image: url('image/ball-background.jpg');
+  background-image: url('images/ball-background.jpg');
   /* Set the background size and position */
   background-size: cover;
   background-position: center;
@@ -292,7 +292,7 @@ body::after {
   width: 50%;
   height: 100%;
   /* Set the background image */
-        background-image: url('image/gear-wheel.png');
+        background-image: url('images/gear-wheel.png');
   /* Set the background size and position */
   background-size:cover;
   background-position: center;
