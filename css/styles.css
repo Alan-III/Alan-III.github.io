@@ -1,12 +1,13 @@
 @charset "UTF-8";
 #particles-container {
-  position: fixed;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
+  z-index: 1;
 }
+
 
 .particle {
   position: absolute;
@@ -30,13 +31,17 @@
 }
 
 .navbar-nav li:hover {
-  transform: scale(1.1);
-  background-color: #f0f0f0; /* change this to the color you want for the hover effect */
+  transform: scale(1.025);
+  background-color: #ffffff90; /* change this to the color you want for the hover effect */
+  a{
+    transform: scale(1.1);
+    color: #bd5d38;
+  }
 }
 
 .navbar-nav li.active {
-  transform: scale(1.1);
-  background-color: #e0e0e0; /* change this to the color you want for the active effect */
+  transform: scale(1.025);
+  background-color: #ffffff90; /* change this to the color you want for the active effect */
 }
 
 
