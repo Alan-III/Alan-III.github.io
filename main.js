@@ -40,3 +40,62 @@
 }
 )();
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navItems = document.querySelectorAll('.navbar-nav li');
+    navItems.forEach(function (item) {
+      item.addEventListener('click', function () {
+        navItems.forEach(function (i) {
+          i.classList.remove('active');
+        });
+        item.classList.add('active');
+      });
+    });
+  });
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const navItems = document.querySelectorAll('.navbar-nav li a');
+    const audio = new Audio('assets/whoosh.flac'); // Add the path to your whoosh sound effect
+  
+    navItems.forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = item.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        audio.play();
+        createParticles(e.clientX, e.clientY);
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      });
+    });
+  
+    function createParticles(x, y) {
+      const particlesContainer = document.getElementById('particles-container');
+      for (let i = 0; i < 10; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = x + 'px';
+        particle.style.top = y + 'px';
+        particlesContainer.appendChild(particle);
+        animateParticle(particle);
+      }
+    }
+  
+    function animateParticle(particle) {
+      const dx = (Math.random() - 0.5) * 100;
+      const dy = (Math.random() - 0.5) * 100;
+      const duration = Math.random() * 1 + 1;
+      const opacity = Math.random();
+      particle.style.transform = `translate(${dx}px, ${dy}px)`;
+      particle.style.transition = `transform ${duration}s, opacity ${duration}s`;
+      particle.style.opacity = opacity;
+      setTimeout(function () {
+        particle.remove();
+      }, duration * 1000);
+    }
+  });
+  
+  

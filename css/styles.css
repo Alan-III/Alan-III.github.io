@@ -1,4 +1,44 @@
 @charset "UTF-8";
+#particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #f00;
+  border-radius: 50%;
+  opacity: 0;
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.navbar-nav li {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav li:hover {
+  transform: scale(1.1);
+  background-color: #f0f0f0; /* change this to the color you want for the hover effect */
+}
+
+.navbar-nav li.active {
+  transform: scale(1.1);
+  background-color: #e0e0e0; /* change this to the color you want for the active effect */
+}
+
 
 .modal p{
   color: #000;
