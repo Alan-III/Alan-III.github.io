@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.modal p{
+  color: #000;
+}
+
 .modal-lg-custom {
   max-width: 80%;
 }
@@ -685,7 +689,7 @@ progress {
 }
 .row {
   --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
+  --bs-gutter-y: 1rem
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
@@ -5255,7 +5259,7 @@ textarea.form-control-lg {
   --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
   --bs-modal-color: ;
-  --bs-modal-bg: #fff;
+  --bs-modal-bg: #eee;
   --bs-modal-border-color: var(--bs-border-color-translucent);
   --bs-modal-border-width: 1px;
   --bs-modal-border-radius: 0.5rem;
