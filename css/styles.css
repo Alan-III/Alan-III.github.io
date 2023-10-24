@@ -5,7 +5,7 @@
 }
 
 .embed-responsive-16by9-custom {
-  padding-bottom: 56.25%;
+  padding-bottom: 20px;
 }
 
 .embed-responsive-item-custom {
@@ -4180,7 +4180,7 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: #fff;
+  --bs-card-bg: #ededed12;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
