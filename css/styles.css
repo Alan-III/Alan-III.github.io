@@ -18,7 +18,7 @@
 }
 
 .container-fluid{
-  background:url(../assets/img/backgroundhex.png) 0 0 repeat;
+  background:url(../assets/img/backgroundhex.png);
   margin-left: 4px !important;
 }
 /*!
