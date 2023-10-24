@@ -208,23 +208,28 @@
                   
                   <!-- Project 1 Modal -->
                     <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                        <div class="modal-dialog modal-lg modal-lg-custom" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="project1ModalLabel">Project 1 Details</h5>
+                            <h5 class="modal-title" id="project1ModalLabel">Project 1</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             </div>
                             <div class="modal-body">
-                            <p>Details about project 1.</p>
-                            <!-- YouTube iframe embed code -->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qIe1SiOn514?si=DG-prbqvB_I_sAc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <p><a href="project1.html">Link to Project 1</a></p>
+                            <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by9-custom">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qIe1SiOn514?si=DG-prbqvB_I_sAc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <p>Brief description of Project 1.</p>
+                            <a href="link/to/your/project1" class="btn btn-primary" target="_blank">Visit Project</a>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                         </div>
                     </div>
+  
                   
                   <!-- Project 2 Modal -->
                   <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
