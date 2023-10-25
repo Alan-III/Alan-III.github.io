@@ -10,10 +10,10 @@ function typeWriter() {
     if (currentLetter < words[currentWord].length) {
       typewriterElement.textContent += words[currentWord][currentLetter];
       currentLetter++;
-      setTimeout(typeWriter, 100);
+      setTimeout(typeWriter, 50);
     } else {
       erasing = true;
-      setTimeout(typeWriter, 2000);
+      setTimeout(typeWriter, 500);
     }
   } else {
     if (currentLetter > 0) {
@@ -28,4 +28,4 @@ function typeWriter() {
   }
 }
 
-setTimeout(typeWriter, 1000);
+setTimeout(typeWriter, 500);
