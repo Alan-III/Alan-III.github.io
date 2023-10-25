@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-img:hover {
+  transform: scale(1.1);
+}
+
+
+
 .navbar-nav li {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
