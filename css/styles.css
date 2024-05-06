@@ -30,7 +30,6 @@
 
 .navbar-nav li.active {
   transform: scale(1.025);
-  background-color: #ffffff90; /* change this to the color you want for the active effect */
 }
 
 
