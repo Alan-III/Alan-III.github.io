@@ -4229,7 +4229,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  height: var(--bs-card-height);
+  height: inherit;
   word-wrap: break-word;
   background-color: var(--bs-card-bg);
   background-clip: border-box;
