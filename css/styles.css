@@ -1,5 +1,18 @@
 @charset "UTF-8";
+.social-icons a:nth-child(1):hover {
+    background-color: blue; /* Override default for first icon (LinkedIn) */
+    border: 1px solid;
+}
 
+.social-icons a:nth-child(2):hover {
+    background-color: black; /* Change color on hover for second icon (GitHub) */
+    border: 1px solid;
+}
+
+.social-icons a:nth-child(3):hover {
+    background-color: red; /* Change color on hover for third icon (YouTube) */
+    border: 1px solid;
+}
 .award-img {
     margin: 10px;
     height: 15rem;
