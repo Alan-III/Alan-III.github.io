@@ -1,4 +1,10 @@
 @charset "UTF-8";
+
+.award-img {
+    margin: 10px;
+    height: 15rem;
+}
+
 .award-link{
 	text-decoration: none;
 	color: white;
