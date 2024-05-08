@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.award-link{
+	text-decoration: none;
+	color: white;
+}
+
 .card-holder{
   height: 400px;
 }
